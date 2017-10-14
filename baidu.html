@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float的应用</title>
+	<style type="text/css">
+	*{
+		padding:0;
+		margin:0;
+	}
+	
+		/*导航栏*/
+		.nav {	
+			float:right;
+			margin-top:24px;
+		}
+		.nav ul li{
+			list-style:none;
+			float:left;
+			margin: 10px;
+			font-size:14px;
+			
+			text-align: center;
+			line-height: 24px;
+			font-family: "宋体","微软雅黑";
+
+		}
+		.nav .bac{
+			background: #3388ff;
+			width:60px;
+			height:24px;
+			text-align: center;
+		/*	line-height: 24px;*/
+
+		}
+		.nav .bac a{
+			  text-decoration: none;
+		}
+		.nav .fontcolor{
+			color:black;
+			font-weight:bold;
+		}
+		.nav .fontcolor1{
+			color:black;
+			font-weight:normal;
+		}
+		.nav .fontcolor:hover{
+			color:#0000cc;
+		}
+
+
+		/*百度图片*/
+		#clear{
+			clear:both;
+		}
+		.png {
+			
+			text-align:center;
+		}
+		.png img{
+			width:270px;
+			height:129px;
+		}
+
+		/*搜索栏*/
+		.box{
+			width:642px;
+			height:36px;
+			/*border:1px gray solid;*/
+			margin:0px auto;
+			margin-top:21px;
+
+		}
+
+		.box .left{
+			width:540px;
+			height:100%;
+			border:1px #999999 solid;
+			float:left;
+			line-height:34px;
+			text-align:center;
+			border-right:0px;		
+		}
+		.box .left input{
+			width:480px;/*500*/
+			height:22px;
+			border:0px;
+			outline:none;
+		}
+		.box .right{
+			width:100px;
+			height:38px;	
+			background:rgb(0,128,255);
+			float:left;
+			text-align:center;
+			line-height: 36px;
+			color:white;
+		}
+		.box .right input{
+			border:0px;
+			background:rgb(0,128,255);
+			outline:none;
+			color:white;
+			font-size: "微软雅黑";
+		}
+
+		.box .left img{
+			height: 100%;
+			/*display:inline-block;*/
+			vertical-align: middle;
+			float:right;
+		}
+		
+
+		/*二维码*/
+		.er{
+		
+			text-align:center;
+			margin-top:180px;
+
+		
+
+		}
+		.er img{
+			width:80px;
+			height:80px;
+
+		}
+		.er p{
+			text-align:center;
+			font-weight:bold;
+			color:#666666;
+		}
+
+
+		/*底部1*/
+		.footer{
+			/*border:1px red solid;*/
+			width:540px;
+			height:22px;
+			margin:0px auto;
+			margin-top:20px;
+			text-align:center;	
+
+		}
+		.footer ul{
+			
+			 display: inline-block;
+
+		}
+		.footer ul li{
+			
+			float:left;
+			list-style:none;
+			margin:0px 10px;
+			font-size:10px;
+			color:#999999;
+			line-height: 22px;
+			text-align:center;	
+		}
+		.footer a{
+			color:#999999;
+		}
+	
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- 导航栏 -->
+	<div class="nav">
+	
+		<ul >
+			<li><a href="http://news.baidu.com/" class="fontcolor">新闻</a></li>
+			<li><a href="https://www.hao123.com/" class="fontcolor1">hao123</a></li>
+			<li><a href="http://map.baidu.com/" class="fontcolor">地图</a></li>
+			<li><a href="http://v.baidu.com/" class="fontcolor">视频</a></li>
+			<li><a href="https://tieba.baidu.com/index.html" class="fontcolor">贴吧</a></li>
+			<li><a href="http://xueshu.baidu.com/" class="fontcolor">学术</a></li>
+			<li><a href="" class="fontcolor1">登录</a></li>
+			<li><a href="" class="fontcolor1">设置</a></li>
+			<li class="bac"><a href=""  style="color:white;">更多产品</a></li>
+		</ul>
+	 
+		</div>
+
+		 <!-- 百度logo -->
+ 		<div id="clear"></div>
+		<div  class="png" >
+			<img src="bd.png" >
+		</div>
+
+
+	<!-- 搜索条 -->
+		<!-- 	<div  style="text-align: center">
+			<img src="bd.png" width="270" height="129">
+		</div> -->
+		
+		<div class="box">
+			<div class="left">
+				<input type="text" name="" >
+				<img src="m.png">
+			</div>
+
+			<div class="right" ><input type="button" name="" value="百度一下"></div>
+		</div>
+
+
+		<!-- 二维码 -->
+		<div id="clear"></div>
+		<div  class="er"> <img src="er.png">
+		<p style="font-size:13px">手机百度</p>
+		</div>
+		
+
+
+		<!-- 底部1 -->
+		<div id="clear"></div>
+		<div class="footer">
+			<ul >
+				<li ><a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a></li>
+				<li ><a href="http://home.baidu.com/">关于百度</a></li>
+				<li ><a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a></li>
+				<li ><a href="http://e.baidu.com/?refer=888">百度推广</a></li>
+			</ul>
+		</div>
+
+			<div id="clear"></div>
+		<div class="footer" style="margin-top:5px">
+			<ul>
+				<li >@2017 Baidu <a href="https://www.baidu.com/duty/">使用百度前必读</a>  <a href="http://help.baidu.com/">意见反馈</a> 京ICP证030173</li>
+				<li>京公网安备11000002000001号</li>
+				
+			</ul>
+		</div>
+
+
+
+</body>
+</html>
